@@ -48,16 +48,16 @@
 // }
 
 
-// var d = 2
+ var d = 2
 
-// if ( d%= 2 == 0) {
+if ( d% 2 == 0) {
 
-//     console.log("C is greater than !")
-// }
+     console.log("C is greater than !")
+}
 
-// else{
-//     console.log("a is greater than b")
-// }
+else{
+    console.log("a is greater than b")
+}
 
 
 // if else leadder
@@ -74,19 +74,19 @@
 // }
 
 
-var a = 10
- if (a == 9) {
+// var a = 10
+//  if (a == 9) {
 
-    console.log("a is the  9");
+//     console.log("a is the  9");
     
     
- } 
- else if (a == 10) {
-    console.log("a is the wird 9");
- }
+//  } 
+//  else if (a == 10) {
+//     console.log("a is the wird 9");
+//  }
 
- else{
-    console.log("a value is the 10");
+//  else{
+//     console.log("a value is the 10");
     
- }
+//  }
 

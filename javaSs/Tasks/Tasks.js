@@ -1,3 +1,6 @@
+
+var Average = 80
+
 if (Average = 90) {
 
     console.log("Excellent!");
