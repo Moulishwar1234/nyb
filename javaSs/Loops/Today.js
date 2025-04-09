@@ -44,12 +44,74 @@
 // Never-ending loop
 // Condition always true
 
-let a = 2
-for (a; a > 1; a++){
-    console.log(a);
+// let a = 2
+// for (a; a > 1; a++){
+//     console.log(a);
+    
+// }
+  
+// Unconditional Loops in JavaScript
+// Non-Primitive Data Types
+// array object 
+
+var person = {
+    name: "John",
+    age: 30,
+    occupation: "Software Engineer",
+    address: 'ATP',
+}
+var detalis = ['mouli', 25, 'ATP'];
+console.log(person);
+console.log(person.address);
+console.log(person.age);
+console.log(person.name);
+console.log(person.occupation);
+
+for (var i = 0; i < detalis.length; i++){
+    console.log(detalis[i]);
     
 }
+// console.log(detalis);
+// console.log(detalis[0]);
+// console.log(detalis[1]);
+
+
+// for...in vs for...of in JavaScript
+
+const man = {
+    name: "Ravi",
+    age: 30,
+    city: "Hyd"
+  };
   
+  for (let key in man) {
+    console.log(key);           // Outputs: name, age, city
+    console.log(man[key]);   // Outputs: Ravi, 30, Hyd
+  }
+
+  const ATP = ["Ravi", 30, "Hyd"];
+
+for (let value of ATP) {
+  console.log(value); // Outputs: Ravi, 30, Hyd
+}
+
+// break    -> exits the loop entirely
+// continue -> skips the current iteration
+
+for (var i = 0; i < 10; i++) {
+    if (i % 2 == 0) {             // if i is even
+        if (i % 4 == 0) {         // and also divisible by 4
+            continue;             // skip this iteration
+        }
+    }
+    console.log(i);               
+}
+
+  
+
+
+
+
 
 
   
