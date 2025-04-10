@@ -46,71 +46,128 @@
 
 // 09/04/2025: TASK 
 
-let student = {
-  name: "John",
-  age: 20,
-  class : "A",
-  roollNumber:42632
+// let student = {
+//   name: "John",
+//   age: 20,
+//   class : "A",
+//   roollNumber:42632
+// }
+// console.log(student);
+// for (let key in student) {
+// } 
+
+// // Month Display (Using Switch) takes a month number (1-12) 
+
+// let  monthNumcer = parseInt(prompt("Enter a month number (1-12):"));
+// switch (monthNumcer) {
+//   case 1:console.log("january");
+//   break;
+//   case 2:console.log("february");
+//   break;
+//   case 3:console.log("march");
+//   break;
+//   case 4:console.log("april");
+//   break;
+//   case 5:console.log("may");
+//   break;
+//   case 6:console.log("june");
+//   break;
+//   case 7:console.log("july");
+//   break;
+//   case 8:console.log("august");
+//   break;
+//   case 9:console.log("september");
+//   break;
+//   case 10:console.log("october");
+//   break;
+//   case 11:console.log("november");
+//   break;
+//   case 12:console.log("december");
+//   break;
+  
+//   default: console.log("Invalid month number");
+// }
+  
+
+  
+// // Create an array that contains the marks of 5 students in an exam Use a for...of loop and calculate the average marks. 
+
+// let marks = [98, 88, 78, 97, 89]
+// let total = 0;
+// // for of 
+// for (let mark of marks){
+//   total += mark;
+// }
+// let Average = total / marks.length;
+// console.log("student marks:", marks);
+// console.log("Average marks:", Average.toFixed(2));
+
+
+
+
+
+// // 1. Print all numbers from 1 to 50 using a for loop
+
+// var number = 1;
+// for (var i = 1; i <= 50; i++) {
+//   console.log(number++);
+  
+//   }
+// 2. Print all even numbers from 1 to 100 using a while loop
+// var even = 1;
+// var count = 0;
+// while (even <= 100) {
+//   console.log(even);
+//   even += 1;
+//   count++
+//   }
+
+  // 3. Print all numbers from 10 to 1 using a do...while loop
+//   var number = 10;
+//   do {
+//     console.log(number);
+//     number--; 
+//   } 
+//   while (number >= 1);
+
+//   // 4. Loop through an array and print each element (use for...of)
+// let fruits = ["apple", "banana", "mango", "orange"]
+// for (let x of fruits) {
+//   console.log(x);
+//   }
+
+
+//   // 5. Loop through an object and print keys and values (use for...in)
+// let car = { brand: "Toyota", model: "Camry", year: 2020 };
+// for (let key in car) {
+//   console.log(key, car[key]);
+// }
+
+// 6. Calculate the sum of all numbers from 1 to 20 using a for loop
+var total = 0;
+for (var i = 1; i <= 20; i++) {
+  total += i;
 }
-console.log(student);
-for (let key in student) {
-} 
+console.log("Sum from 1 to 20 is:", total);
 
-// Month Display (Using Switch) takes a month number (1-12) 
 
-let  monthNumcer = parseInt(prompt("Enter a month number (1-12):"));
-switch (monthNumcer) {
-  case 1:console.log("january");
-  break;
-  case 2:console.log("february");
-  break;
-  case 3:console.log("march");
-  break;
-  case 4:console.log("april");
-  break;
-  case 5:console.log("may");
-  break;
-  case 6:console.log("june");
-  break;
-  case 7:console.log("july");
-  break;
-  case 8:console.log("august");
-  break;
-  case 9:console.log("september");
-  break;
-  case 10:console.log("october");
-  break;
-  case 11:console.log("november");
-  break;
-  case 12:console.log("december");
-  break;
-  
-  default: console.log("Invalid month number");
+// 7. Print the multiplication table of 6 using a for loop
+var table = 6;
+for (var i = 1; i <= 10; i++) {
+  console.log(table * i);
 }
-  
+
+// 8. Loop through a string and print each character (use for loop)
+let word = "looping";
+for (let i = 0; i < word.length; i++) {
+  console.log(word[i]);
+  }
+
+  // 15. Loop 10 times and print "Loop #n" where n is the loop number
+var count = 0;
+for (var i = 0; i < 10; i++) {
+  console.log("Loop #" + (i + 1));
+  count++
+  }
 
   
-// Create an array that contains the marks of 5 students in an exam Use a for...of loop and calculate the average marks. 
-
-let marks = [98, 88, 78, 97, 89]
-let total = 0;
-// for of 
-for (let mark of marks){
-  total += mark;
-}
-let Average = total / marks.length;
-console.log("student marks:", marks);
-console.log("Average marks:", Average.toFixed(2));
-
-
-
-
-
-
-
-  
-
-
-
-    
-    
