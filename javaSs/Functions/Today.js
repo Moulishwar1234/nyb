@@ -48,9 +48,9 @@
 // // function add (a,b,c){
 //     // console.log(a+b-c);
 // //     console.log(a,b,c);
-    
 
-    
+
+
 // // }
 // // add(12,300,300)
 
@@ -61,7 +61,7 @@
 // //     console.log(a+b+c);
 // //     console.log(a,b,c);
 // //     console.log(a*b*c);
-    
+
 // //     }
 // //     add(12);
 // //     //  default parameter is used to assign a default value to the parameter if no value is passed to
@@ -73,10 +73,10 @@
 // //         console.log(a,b,c);
 // //         console.log(a*b*c);
 // //         console.log(arguments);
-        
+
 // //         }
 // //         add(12,300,300, 367645,7748,8484,84,);
-        
+
 
 
 // //         // rest parameter
@@ -105,7 +105,7 @@
 // // function sum(a, b) {
 // //     console.log(a + b);
 // //   }
-  
+
 // //   sum(1, 2);
 // // 1. function expression
 // // 2. function declaration
@@ -128,11 +128,106 @@
 // function sum(a, b) {
 //     console.log(a + b);
 //   }
-  
+
 //   sum(10, 20);
 //   const a = 10;
 //   const b = 20;
+
+// 1. Hoisting:- In JavaScript, variable and function declarations are moved to the top of their scope before code execution. This is called hoisting
+// 2. Scope:- Scope is the region of the code where a variable is defined. Ther
+// 3. this keyword:- The this keyword refers to the current object in a function or method
+console.log(a); // undefined (not error!)
+var a = 10;
+// What happens: JS moves var a to the top, so it becomes:
+var a;
+console.log(a);
+a = 10;
+//  But with let or const, hoisting happens differently. Accessing them before declaration throws an error.
+console.log(b); //  ReferenceError
+let b = 20;
+
+// Closure:-
+// A closure is a function that has access to its outer function's scope, even when the outer
+
+
+// 1.RedeclarationDeclaring the same variable name again in the same scope.
+// var (Allowed)
+var x = 10;
+var x = 20;  //  Allowed with var
+console.log(x); // 20
+// let (Not Allowed)
+let x = 10;
+let x = 20;  //  Error
+console.log(x); // 10
+
+//  let y = 10;
+// let y = 20;  //  SyntaxError: Identifier 'y' has already been declared
+
+// const (Not Allowed)
+const x = 10;
+const x = 20;  //  Error
+console.log(x); // 10
+
+//  2. Reassignment:-
+// var (Allowed)
+var city = "Paris";
+city = "London"; // Reassignment allowed for var
+console.log(city); // London
+// let (Allowed)
+let name = "Alice";
+name = "Bob"; // Reassignment allowed for let
+console.log(name); // Bob
+// const (Not Allowed)
+const PI = 3.14;
+PI = 3.14159; //  Error: Assignment to constant variable
+console.log(PI); // 3.14
+// 3. Reinitialization:-
+// var (Allowed)
+var x = 10;
+x = 20;  // Allowed with var
+// let (Not Allowed)
+let x = 10;
+x = 20;  //  Error
+// const (Not Allowed)
+const x = 10;
+x = 20;  //  Error
+
+
+
+// Term	What it Means	var	let	const
+// Redeclaration	Declare same variable again	         Allowed	        Error	         Error
+// Reassignment	Assign a new value to the variable	     Allowed	    Allowed	         Error
+// Reinitialization	Reassign after initial assignment	 Allowed	Allowed	         Error
+
+IIFE: -
+    // IIFE
+    (function () {
+        console.log("Hello, World!");
+    })(); // Output: Hello, World!
     
+//  IIFE with arguments
+(function (name) {
+    console.log("Hello, " + name);
+})("John"); // Output: Hello, John
+//  IIFE with return statement
+(function () {
+    return "Hello, World!";
+})(); // Output: Hello, World!
+
+//  IIFE with function expression
+var func = function () {
+    console.log("Hello, World!");
+};
+func(); // Output: Hello, World!
+
+//  IIFE with function declaration
+function func() {
+    console.log("Hello, World!");
+}
+func(); // Output: Hello, World!
+
+
+
 
 
 
