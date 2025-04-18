@@ -176,111 +176,153 @@
 // // let (Allowed)
 // let name = "Alice";
 // name = "Bob"; // Reassignment allowed for let
-// console.log(name); // Bob
-// // const (Not Allowed)
-// const PI = 3.14;
-// PI = 3.14159; //  Error: Assignment to constant variable
-// console.log(PI); // 3.14
-// // 3. Reinitialization:-
-// // var (Allowed)
-// var x = 10;
-// x = 20;  // Allowed with var
-// // let (Not Allowed)
-// let x = 10;
-// x = 20;  //  Error
-// // const (Not Allowed)
-// const x = 10;
-// x = 20;  //  Error
+// // console.log(name); // Bob
+// // // const (Not Allowed)
+// // const PI = 3.14;
+// // PI = 3.14159; //  Error: Assignment to constant variable
+// // console.log(PI); // 3.14
+// // // 3. Reinitialization:-
+// // // var (Allowed)
+// // var x = 10;
+// // x = 20;  // Allowed with var
+// // // let (Not Allowed)
+// // let x = 10;
+// // x = 20;  //  Error
+// // // const (Not Allowed)
+// // const x = 10;
+// // x = 20;  //  Error
 
 
 
-// // Term	What it Means	var	let	const
-// // Redeclaration	Declare same variable again	         Allowed	        Error	         Error
-// // Reassignment	Assign a new value to the variable	     Allowed	    Allowed	         Error
-// // Reinitialization	Reassign after initial assignment	 Allowed	Allowed	         Error
+// // // Term	What it Means	var	let	const
+// // // Redeclaration	Declare same variable again	         Allowed	        Error	         Error
+// // // Reassignment	Assign a new value to the variable	     Allowed	    Allowed	         Error
+// // // Reinitialization	Reassign after initial assignment	 Allowed	Allowed	         Error
 
-// IIFE: -
-//     // IIFE
-//     (function () {
-//         console.log("Hello, World!");
-//     })(); // Output: Hello, World!
+// // IIFE: -
+// //     // IIFE
+// //     (function () {
+// //         console.log("Hello, World!");
+// //     })(); // Output: Hello, World!
     
-// //  IIFE with arguments
-// (function (name) {
-//     console.log("Hello, " + name);
-// })("John"); // Output: Hello, John
-// //  IIFE with return statement
-// (function () {
-//     return "Hello, World!";
-// })(); // Output: Hello, World!
+// // //  IIFE with arguments
+// // (function (name) {
+// //     console.log("Hello, " + name);
+// // })("John"); // Output: Hello, John
+// // //  IIFE with return statement
+// // (function () {
+// //     return "Hello, World!";
+// // })(); // Output: Hello, World!
 
-// //  IIFE with function expression
-// var func = function () {
-//     console.log("Hello, World!");
-// };
-// func(); // Output: Hello, World!
+// // //  IIFE with function expression
+// // var func = function () {
+// //     console.log("Hello, World!");
+// // };
+// // func(); // Output: Hello, World!
 
-// //  IIFE with function declaration
-// function func() {
-//     console.log("Hello, World!");
-// }
-// func(); // Output: Hello, World!
+// // //  IIFE with function declaration
+// // function func() {
+// //     console.log("Hello, World!");
+// // }
+// // func(); // Output: Hello, World!
 
 
-// function curring:-it is a process of converting a single function with multiple arguments into a function with multiple single argument functions.
-function add(a) {
-    return function (b) {
-    return function (c) { 
-    return function (d) {   
-        return a + b + c + d;
-        }
-        }
-    }
-    }
+// // function curring:-it is a process of converting a single function with multiple arguments into a function with multiple single argument functions.
+// function add(a) {
+//     return function (b) {
+//     return function (c) { 
+//     return function (d) {   
+//         return a + b + c + d;
+//         }
+//         }
+//     }
+//     }
    
-    console.log(add(1)(2)(3)(4)); // Output: 15
+//     console.log(add(1)(2)(3)(4)); // Output: 15
 
-    function sub(e) {
-        return function (f) {
-            return function (g) {
-                return function (h) {
-                    return e - f - g - h;
-                    }
-                    }
-                    }
-                    }
-                    console.log(sub(10)(2)(3)(4)); // Output: -9
+//     function sub(e) {
+//         return function (f) {
+//             return function (g) {
+//                 return function (h) {
+//                     return e - f - g - h;
+//                     }
+//                     }
+//                     }
+//                     }
+//                     console.log(sub(10)(2)(3)(4)); // Output: -9
 
-// recursive function:- calling it self
-function factorial(n) {
-    if (n == 0) {
-        return 1;
-        }
-            return n * factorial(n - 1);
-            }
-            console.log(factorial(5)); // Output: 120
+// // recursive function:- calling it self
+// function factorial(n) {
+//     if (n == 0) {
+//         return 1;
+//         }
+//             return n * factorial(n - 1);
+//             }
+//             console.log(factorial(5)); // Output: 120
  
-//  Higher order function:-
- // a function that takes another function as an argument or returns a function as a result
- function outerFunction() {
-    function innerFunction() {
-        console.log("Hello, World!");
-        }
-        return innerFunction;
-        }
-        var inner = outerFunction();
-        inner(); // Output: Hello, World!
-        //  function that takes another function as an argument
-// first class function:-
-// a function that can be passed around like any other object
+// //  Higher order function:-
+//  // a function that takes another function as an argument or returns a function as a result
+//  function outerFunction() {
+//     function innerFunction() {
+//         console.log("Hello, World!");
+//         }
+//         return innerFunction;
+//         }
+//         var inner = outerFunction();
+//         inner(); // Output: Hello, World!
+//         //  function that takes another function as an argument
+// // first class function:-
+// // a function that can be passed around like any other object
+// function outerFunction() {
+//     function innerFunction() {
+//         console.log("Hello, World!");
+//         }
+//         return innerFunction;
+//     }
+//     var inner = outerFunction();
+//     inner();
+
+
+// call back function:-
+function outerFunction(callback) {
+    callback();
+}  
+function innerFunction() {
+    console.log("Hello, World!");
+}
+outerFunction(innerFunction); // Output: Hello, World!
+
+// //  function that takes another function as an argument
+// //  function that returns a function as a result
 function outerFunction() {
     function innerFunction() {
         console.log("Hello, World!");
-        }
-        return innerFunction;
     }
-    var inner = outerFunction();
-    inner();
+    return innerFunction;
+}
+var inner = outerFunction();
+inner(); // Output: Hello, World!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
