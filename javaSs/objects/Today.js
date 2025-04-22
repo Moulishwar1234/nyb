@@ -132,6 +132,103 @@ console.log(a);
 console.log(b);
 console.log(c);
 
+// primitive
+
+// Deep copy // Original memory location is different from copied memory location
+
+var M = 20;     // Hx109020
+var N = M;      // Hx102203
+
+console.log(M, N); // Logs: 20 20
+
+M = 30;
+N = M;
+
+console.log(M, N); // Logs: 30 30
+
+
+//Refernece data types:-
+// it is 3 types 
+// 1. normal:- 2.deep copy 3.shallow copy
+// 1.normal copy :-
+// orignal memory location is same as coped memory location 
+// if we update any thing in the orignal memeory location 
+// the changes will be reflected in the copied variable as well.
+var Emplees ={
+    name: 'ravi',
+     age: 22, 
+     city: 'hyd', 
+    salary: 80990,
+    address: '123 Main St',
+    job: { role: 'it'  , level: 'senior' 
+
+     }
+    
+}
+var copy = Emplees
+console.log(Emplees);
+Emplees.job.salary = 80000
+console.log(copy);
+
+
+// Deep copy using JSON methods
+var Employees = {
+    name: 'Ravi',
+    age: 30,
+    city: 'hyd',
+    job: {
+        role: 'Developer',
+        salary: 55000
+    },
+    array: [1, 2, 3, 4, 5]
+};
+
+// Create deep copy
+var copy = JSON.parse(JSON.stringify(Employees));
+
+console.log(Employees);
+
+// Modify original object
+Employees.name = 'Mouli';
+Employees.job.salary = 80000;
+Employees.array[0] = 10;
+Employees.array[1] = 20;
+Employees.array[4] = 190;
+
+console.log(copy);
+console.log(Employees);
+
+
+
+// shallow copy:-
+// var shallowCopy = Object.assign({}, Employees); 
+
+var Original = {
+    age: 30,
+    arr: [1, 2, 3],
+    job: {
+        role: 'Developer',
+        salary: 55000
+    }
+};
+
+var copy = Object.assign({}, Original); // shallow copy
+//E.S - 6
+
+var copy ={
+    ...Original
+}
+
+Original.age = 31;
+Original.arr[0] = 10;
+copy.job.salary = 100000;
+Original.name = "Mouli";
+console.log(Original);
+
+
+
+
+
 
 
 
