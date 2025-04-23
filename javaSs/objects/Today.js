@@ -228,6 +228,88 @@ console.log(Original);
 
 
 
+// math Object
+var math = {
+    add: function(a, b) {
+        return a + b;
+    },
+    subtract: function(a, b) {
+        return a - b;
+    },
+    multiply: function(a, b) {
+        return a * b;
+    },
+    divide: function(a, b) {
+        return a / b;
+    }
+    ,
+    modulus: function(a, b) {
+        return a % b;
+    }
+    ,
+    power: function(a, b) {
+        return Math.pow(a, b);
+    }
+    , 
+    square: function(a) {
+        return a * a;
+    }
+    , 
+    squareRoot: function(a) {
+        return Math.sqrt(a);
+    }
+};
+console.log(math . add(5,2));
+console.log(math . subtract(5,2));
+console.log(math . multiply(5,2));
+console.log(math . divide(5,2));
+console.log(math . modulus(5,2));
+console.log(math . power(5,2));
+console.log(math . square(5,2));
+console.log(math . squareRoot(5,2));
+
+// var arr =[1,2,3,4,5,6,7,8,9]
+// console.log(math . min(arr))
+
+
+// base exponent
+
+console.log(3*2);
+
+// we can use uper proces also but it is a lenth process the we can used to a math. funcytion
+
+console.log(math.power(2, 3));   
+console.log(math.square(4)); 
+console.log(math.squareRoot(16));
+console.log(math.modulus(10, 3));
+console.log(math.add(10, 5));
+console.log(math.subtract(10, 5));
+console.log(math.multiply(10, 5));
+console.log(math.divide(10, 5));
+console.log(math.square(3));
+console.log(math.squareRoot(25));
+console.log(math.add(1, 1));  
+
+// date 
+var d = new Date().getFullYear
+var d1 = new Date().
+getMonth() + 1
+var d2 = new Date().getDate();
+
+
+console.log(d);
+
+console.log(d1);
+
+
+
+
+
+ 
+
+
+
+
 
 
 

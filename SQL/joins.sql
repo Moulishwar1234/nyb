@@ -162,3 +162,91 @@ SELECT
 FROM
     HR.EMPLOYEES   E
     RIGHT JOIN HR.DEPARTMENTS D ON E.DEPARTMENT_ID = D.DEPARTMENT_ID;
+SELECT
+    E.EMPLOYEE_ID,
+    D.DEPARTMENT_NAME
+FROM
+    HR.EMPLOYEES   E,
+    HR.DEPARTMENTS D
+WHERE
+    E.DEPARTMENT_ID = D.DEPARTMENT_ID;
+ -- 2. Non-Equi Join 
+SELECT
+    E.EMPLOYEE_ID,
+    D.DEPARTMENT_NAME
+FROM
+    HR.EMPLOYEES   E,
+    HR.DEPARTMENTS D
+WHERE
+    E.DEPARTMENT_ID != D.DEPARTMENT_ID;
+
+SELECT
+    *
+FROM
+    DEPARTMENTS;
+
+SELECT
+    107 * 26
+FROM
+    DUAL;
+
+--SELF Join
+SELECT
+    E1.*,
+    E2.FIRST_NAME MANAGER_FIRST_NAME,
+    E2.LAST_NAME  MANAGER_LAST_NAME
+FROM
+    HR.EMPLOYEES E1,
+    HR.EMPLOYEES E2
+WHERE
+    E1.MANAGER_ID = E2.EMPLOYEE_ID;
+SELECT
+    e.employee_id,
+    e.first_name,
+    e.department_id
+FROM
+    HR.employees e,
+    HR.departments d
+WHERE
+    e.department_id(+) = d.department_id;
+SELECT
+    e.employee_id,
+    e.first_name,
+    e.last_name,
+    e.department_id,
+    d.department_name,
+    d.location_id
+FROM
+    HR.employees e
+LEFT JOIN
+    HR.departments d ON e.department_id = d.department_id
+
+UNION
+
+SELECT
+    e.employee_id,
+    e.first_name,
+    e.last_name,
+    e.department_id,
+    d.department_name,
+    d.location_id
+FROM
+    HR.employees e
+RIGHT JOIN
+    HR.departments d ON e.department_id = d.department_id;
+SELECT
+    e.employee_id,
+    e.first_name,
+    e.last_name,
+    e.email,
+    d.location_id
+FROM
+    HR.employees e,
+    HR.departments d
+ORDER BY e.employee_id;
+
+
+
+
+
+       
