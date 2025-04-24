@@ -302,6 +302,112 @@ console.log(d);
 console.log(d1);
 
 
+// template string
+//embedding values and string  
+var a = 5
+var b = 10
+console.log(a+b);
+console.log(`sum of a and b is a+b`);
+console.log(`sum of ${a} and ${b} is ${a+b}`);
+
+let name = "John";
+let msg = "Hello";
+console.log(`Hello ${name}`);
+
+//string 
+//collection of charactor
+//string can be consider as objects
+//string methods 
+//length of the string
+//sys:- stringname.length
+var c = "Hello"
+console.log(c.length);
+//remove white spaces 
+//remove white space at the begining of the string
+//syd:-stringname.trimstart()
+let m = "   mouli   "
+var n = "shwar   "
+console.log(`mouli${n}`.trimEnd());
+
+console.log(m.trim());
+console.log(m);
+console.log(m.trimStart());
+console.log(m.trimEnd());
+console.log(m.trimLeft());
+//extraction a specific part of the string
+let s = "JavaScript";
+
+// Slice: from index to index (not including end)
+console.log(s.slice(0, 4));
+console.log(4,s.length);
+ 
+
+// Substring: similar to slice
+console.log(s.substring(4, 10));
+console.log(s.substring(4,s.length));
+console.log(s.length);
+
+
+
+// Substr (deprecated): start, length
+console.log(s.substr(4, 6));
+console.log(s.substr(2,8));
+
+//indexvalue
+// string.indexOf(searchValue, startIndex)
+
+
+let sentence = "JavaScript is awesome!";
+
+console.log(sentence.indexOf("Script")); 
+console.log(sentence.indexOf("awesome")); 
+console.log(sentence.indexOf("java")); 
+console.log(sentence.lastIndexOf("!"));
+
+// charAt() – Get a Character at a Specific Index
+
+// string.charAt(index)
+let word = "JavaScript";
+
+console.log(word.charAt(0)); 
+console.log(word.charAt(4));  
+console.log(word.charAt(7));
+
+// charCodeAt() – Get ASCII Code of Character
+var g = "gowd"
+console.log(g.toLocaleUpperCase());
+console.log(g.toLocaleLowerCase());
+
+// Character Type | ASCII Code Range
+// Uppercase A–Z | 65–90
+// Lowercase a–z | 97–122
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
