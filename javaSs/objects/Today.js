@@ -383,6 +383,69 @@ console.log(g.toLocaleLowerCase());
 // Lowercase a–z | 97–122
 
 
+//replace 
+var l = "Hello world"
+console.log(l);
+console.log(l.replace("world","java script"));
+//adding a new string
+//+
+var a = "Hello"
+var b = "World"
+console.log(a+b);
+
+//(or)
+
+console.log(a.concat("man"));
+
+
+
+
+//pad   ES10/ES-11
+//padStart
+var a = "     man of the person"
+console.log(a.padStart("Hello"));
+
+
+
+
+//split
+
+var i = "Mouli,mama Malik"
+console.log(i);
+var n = i.split(", ,  ")
+console.log(n);
+
+//how to find existing string 
+console.log(i.includes(" king"));
+console.log(i.includes("mama"));
+
+
+//repate
+
+var d = "mouli"
+console.log(d.repeat(20));
+var e = "dbdhjbvd"
+console.log(e);
+for (i=1;i<10;i++){
+    e+=d
+}
+console.log(e);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
