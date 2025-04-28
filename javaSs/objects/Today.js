@@ -431,6 +431,83 @@ for (i=1;i<10;i++){
 }
 console.log(e);
 
+//this key word:-
+// it refers the current odject 
+var person = {
+    name: "Ravi",
+    age : 27,
+    cty : "ATP",
+    play: function() {
+      console.log(this.name); // "this" refers to person
+    }
+  };
+  
+  person.play();  
+  console.log(person);
+  //useding the functions
+  function show() {
+    console.log(this);
+  }
+  
+  show();
+
+  var obj = {
+    name: "Ravi",
+    age : 40,
+    location : "BGL",
+    greet: () => {
+      console.log(this.location);
+    }
+  };
+  
+  obj.greet();
+  console.log(obj);
+
+  const student = {
+    name: "Mouli",
+    age : 28,
+    location : "ATP",
+
+    greet: function() {
+      console.log(this.name);
+    }
+  };
+  student.greet(); 
+  console.log(student);
+
+  const persons = {
+    name: "Ravi",
+    greet: function(message) {
+      console.log(this.name + " says " + message);
+    }
+  };
+  
+  const anotherPersons = {
+    name: "Mouli",
+    age: 56,
+    cty: "ATP",
+  };
+  
+  // Using call
+  persons.greet.call(anotherPersons, "Hello"); 
+  
+  // Using apply
+  persons.greet.apply(anotherPersons, ["mouli"]); 
+  
+  // Using bind
+  const newGreet = persons.greet.bind(anotherPersons);
+  newGreet("Hello"); 
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
 
 
 
