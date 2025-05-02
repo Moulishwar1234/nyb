@@ -8,120 +8,120 @@
 // // c. function expression with arrow function
 // // function expression with named function:
 // // sys:
-// // function functionName() {
-// //     return; // you can return a value here
-// // }
-// // function put() {
-// //     return "Hello, World!";
-// // }
+function functionName() {
+    return; // you can return a value here
+}
+function put() {
+    return "Hello, World!";
+}
 
-// // console.log(put()); 
+console.log(put()); 
 
 // // //function expression with anonymous function
 
 // // // sys:
-// // const greet = function() {
-// //     return "Hi there!";
-// // };
+const greet = function() {
+    return "Hi there!";
+};
 
-// // greet();
+greet();
 
 // // //  function expression with arrow function
 // // // sys:
-// // const person = () => {
-// //     return "Hello from arrow function!";
-// // };
+const person = () => {
+    return "Hello from arrow function!";
+};
 
-// // person();
+person();
 
 
 
 // // Parameter and arguments (or) place holder
 // // sys:
-// // function add(a, b) {
-// //     return a + b;
-// // }
-// // console.log(add(5, 7));
+function add(a, b) {
+    return a + b;
+}
+console.log(add(5, 7));
 // //  they are used to store the values of the function decleration
 // //  they are used to pass the values to the function declaration
 
-// // function add (a,b,c){
-//     // console.log(a+b-c);
-// //     console.log(a,b,c);
+function add (a,b,c){
+    console.log(a+b-c);
+    console.log(a,b,c);
 
 
 
-// // }
-// // add(12,300,300)
+}
+add(12,300,300)
 
 
 // // // Defaltparameter
 // // // sys:
-// // function add(a,b=null,c=10){
-// //     console.log(a+b+c);
-// //     console.log(a,b,c);
-// //     console.log(a*b*c);
+function add(a,b=null,c=10){
+    console.log(a+b+c);
+    console.log(a,b,c);
+    console.log(a*b*c);
 
-// //     }
-// //     add(12);
+    }
+    add(12);
 // //     //  default parameter is used to assign a default value to the parameter if no value is passed to
 
 // //     // argumentsobjects---E.S-5
 // //     // sys:
-// //     function add(a,b,c){
-// //         console.log(a+b+c);
-// //         console.log(a,b,c);
-// //         console.log(a*b*c);
-// //         console.log(arguments);
+    function add(a,b,c){
+        console.log(a+b+c);
+        console.log(a,b,c);
+        console.log(a*b*c);
+        console.log(arguments);
 
-// //         }
-// //         add(12,300,300, 367645,7748,8484,84,);
+        }
+        add(12,300,300, 367645,7748,8484,84,);
 
 
 
 // //         // rest parameter
 // //         // sys:
-// //         function add(a,b,c,...rest){
-// //             console.log(a+b+c);
-// //             console.log(a,b,c);
-// //             console.log(rest);
-// //         }
-// //         add(12,300,300, 367645,7748,8484,84)
+        function add(a,b,c,...rest){
+            console.log(a+b+c);
+            console.log(a,b,c);
+            console.log(rest);
+        }
+        add(12,300,300, 367645,7748,8484,84)
 
 
-// //         let A = 10;
-// // const B = "Hello";
+        let A = 10;
+const B = "Hello";
 
-// // console.log(A, B);
+console.log(A, B);
 
-// // sum();
+sum();
 
-// // function sum() {
+function sum() {
 
-// // }
+}
 
 
 
-// // function sum(a, b) {
-// //     console.log(a + b);
-// //   }
+function sum(a, b) {
+    console.log(a + b);
+  }
 
-// //   sum(1, 2);
+  sum(1, 2);
 // // 1. function expression
 // // 2. function declaration
 // // 3. arrow function
 // // 4. function constructor
-// // var let const
+// var let const
 
-// // var a = 10;
-// // var b = 20;
+var a = 10;
+var b = 20;
 
-// // function sum() {
-// //   // block
-// //   console.log(a + b);
-// // }
+function sum() {
+  // block
+  console.log(a + b);
+}
 
-// // sum();
+sum();
 
 
 

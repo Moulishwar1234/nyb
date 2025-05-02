@@ -488,6 +488,87 @@ const sumEven = arr =>
 console.log(sumEven([1, 2, 3, 4, 5, 6]));
 console.log(sumEven([10, 20, 30, 40, 50, 60]));
 
+// 1.11111111
+function getFirstChar(str) {
+  if (str.length === 0) 
+    return ''; 
+  return str[0];
+}
+
+console.log(getFirstChar("hello")); 
+console.log(getFirstChar("Mouli"));
+console.log(getFirstChar(""));   
+
+// 2. Add All Numbers in an Array 
+
+// Task: 
+// Write a function sumArray(arr) that returns the total sum of all numbers in the array. 
+// Example: sumArray([1, 2, 3]) should return 6. 
+function sumArray(arr) 
+  {
+    let sum = 0;
+    for (let num of arr)
+    {
+      sum += num;
+    }
+    return sum;
+  }
+
+console.log(sumArray([1, 2, 3]));
+console.log(sumArray([3,3]));
+console.log(sumArray([1,1,1,1,1,1]));
+
+// 3. Check if Array Contains a Value 
+
+// Task: 
+// Write a function containsValue(arr, value) that returns true if the value exists in the array. 
+// 4. Find Length of an Array without using length Property 
+
+// Task: 
+// Write a function getArrayLength(arr) that manually counts and returns the number of elements in an array. 
+function getArrayLength(arr) {
+  var counts = 0;
+  for (let _ of arr) {
+    counts++;
+  }
+  return counts;
+}
+
+console.log(getArrayLength([1, 2, 3]));
+console.log(getArrayLength([1, 2, 3, 5, 4, 6]));
+
+
+function findMin(arr) {
+  let min = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  return min;
+}
+console.log(findMin([2,3,4,5,6,7,]));
+
+
+function repeatTheString (str, n){
+
+
+let result = "";
+for (let i=0;i<n; i++)
+  {
+  result += str;
+}
+return result;
+}
+console.log(repeatTheString("hi",3));
+console.log(repeatTheString("njysggds",8));
+
+
+
+
+
+
+
 
 
 

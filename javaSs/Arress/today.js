@@ -1,0 +1,159 @@
+// Arres 
+// what is array 
+// it is a rederece data tyoe where we can store multiple values in a single memory location 
+// we can store homogeneous and heterogenious date 
+// how to difine a array [] 
+// we cant difine the number in the stating the subtile of it show the error 
+var _arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, "Mouli", "sai", true, false, null, undefined, {}, [{}]];
+console.log(_arr1);
+
+// inarays related data 
+// by using index vlue we can access the individulal emelements in the arry 
+// 0 start n-1 (length of arry)(Node.of items in the arry) 
+// we need hello 
+console.log(_arr1[10]);
+
+
+
+
+
+// how to find arry items 
+// indexof():- 
+// it return the index of that partiakar element 
+console.log(_arr1.indexOf(5));
+// lastindex() 
+console.log(_arr1.lastIndexOf(9));
+
+// indcludes() 
+console.log(_arr1.includes(6));
+console.log(_arr1.includes(60));
+
+// reference data types 
+// 1. find 
+// 2.findindex() 
+var Arry = [{ name: "Mouli" }, { Age: 24 }, { City: "ATP" }];
+
+
+const found = Arry.find(obj => obj.name === "Mouli");
+console.log(found);
+
+const index = Arry.findIndex(obj => obj.name === "Mouli");
+console.log(index); 
+
+// how to loops arrys
+// for of 
+// for in 
+// for each -->it is given both index values and values 
+var a = [1,2,3,4,5,6,7,8]
+console.log(a);
+var a = [1, 2, 3, 4, 5, 6, 7, 8];
+
+a.forEach((v, i) => {
+    console.log(v, i);
+});
+
+
+// Array methods 
+// 1. map 
+// 2.filter 
+// 3.reduce 
+// 4.every 
+// 5.some 
+// 6.find 
+
+
+// normailiy
+var arr = [1,2,3,4,5,]
+var arr1 =[]
+for (i of arr){
+    arr1.push(i*i)
+}
+console.log(arr1);
+
+// map:- it charges each and every elemant is the arry retuns a new arry
+var m = arr.map(k => i*i)
+console.log(m);
+
+
+// filter ():- it filter the arry based on the certaion codition 
+
+// Nor :-
+var a = [2,3,4,5,6,7,8,9,10,12,14,16,18,20]
+for (i of a){
+    if(i>5){
+        console.log(i);
+        
+    }
+}
+
+// function 
+var m = a.filter(function(v){
+    return v>5
+})
+console.log(m);
+
+// filter:- 
+var n = a.filter(v=> v>5)
+console.log(m);
+
+// even number 
+var  evennumber = a.filter(m => m%2 == 0) 
+console.log(evennumber);
+
+// reduce ():- it is reduces the complete arry into single value
+
+// nor:-
+var m = [1,2,3,4,5,6,7,8,9,0,2,323,4,5,55,566,7,,7,88,]
+var sum = 0 
+for (i of m){
+    sum +i
+}
+console.log(m);
+
+// reducet 
+var j = [1,8,2,4,6,8,10]
+var k = j.reduce ((a,b) => (a+b),0)
+console.log(k);
+
+// every ():-it check the condition if all the emements in the arry statifies the condition it retuns true if not false
+var w = [1,2,3,4,5,6,7,8,9]
+console.log(w.every(i => i % 2 == 0));
+
+// Some ():-it check the condition if any the elements in the arryu satisfies the condition it returns true if not returns flase
+console.log(a.some(i =>i%2 == 0));
+
+
+// set ():-only unic values
+var s = new Set();
+s.add(1);
+s.add(2);
+s.add(3);
+s.add(4);
+s.add(5);
+s.add(1); 
+
+console.log(s);
+console.log(s.size);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
