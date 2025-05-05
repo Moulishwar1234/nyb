@@ -131,9 +131,76 @@ s.add(3);
 s.add(4);
 s.add(5);
 s.add(1); 
-
+s.delete(1);
+console.log(s);
 console.log(s);
 console.log(s.size);
+console.log(s.has(1));
+s.clear()
+console.log(s);
+
+// remove duplicates from an array 
+var arr = [1,2,3,4,5,6,7,8,9,1,12,33,4,5,6,6,7,7,8,8,877,7,76,6,5,5,5,5,5,54,4,4,4,4]
+console.log(arr);
+var Aset =new Set(arr)
+console.log(Aset);
+// converted to array 
+var Aset = [new Set(arr)];
+console.log(Aset);
+// spred operrator 
+var Aset =[...new Set(arr)];
+console.log(Aset);
+// filter 
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 12, 33, 4, 5, 6, 6, 7, 7, 8, 8, 877, 7, 76, 6, 5, 5, 5, 5, 5, 54, 4, 4, 4, 4];
+
+var uniqueArr = arr.filter((a,b) => arr.indexOf(a) === b);
+
+console.log(uniqueArr);
+
+
+// normally 
+
+let arrs = [1, 2, 3, 2, 1, 4, 5, 3];
+let newarr = [];
+
+for (let i of arrs) {
+    if (!newarr.includes(i)) {
+        newarr.push(i);
+    }
+}
+
+console.log(newarr);
+
+// flattining of array 
+var ar = [1,2,23,4,45,6,7,8,9,"mouli","sai","dog",[[[[[[]]]]]]]
+console.log(ar);
+console.log(ar.flat(1));
+console.log(ar.flat(3));
+
+// for...of and Array.isArray(): 
+
+var arr = [1, [2, 3], "hello", [4, 5], 6];
+
+for (let item of arr) {
+  if (Array.isArray(item)) {
+    console.log("Array found:", item);
+  } else {
+    console.log("Not an array:", item);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
