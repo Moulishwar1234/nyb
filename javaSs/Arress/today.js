@@ -190,6 +190,51 @@ for (let item of arr) {
 }
 
 
+//from():-
+// it is a convetst is into arry 
+var s = "hello";
+console.log(s);
+var k = Array.from(s);
+console.log(k);
+
+//at:-it retuens athe index of the array
+var j = [1, 2, 3, 4, 5, 6]
+console.log(m.indexOf(5));
+console.log(m.at(5));
+
+//fill :- it is a used to fill the array with the given value
+//it is a three types (valuetablefilled/starting/ending )
+var arr = [1, 2, 3, 4, 5, 6]
+console.log(arr);
+m.fill(0,0,m.length-1);
+console.log(arr);
+
+
+//sorting of array:-arranging the iteam is the array in a partiation order (smal to big and big to small)
+//it is a two types (asc and desc)
+var arrss = [1, 5, 3, 7, 2, 9]
+
+// console.log(m);
+console.log(arrss);
+console.log(arrss.sort((a, b) =>
+    a - b   
+));
+
+
+//revera():-
+//it is a used to reverse the array
+var u = [1, 2, 3, 4, 5, 6]
+console.log(u);
+console.log(u.reverse());
+
+
+
+
+
+
+
+
+
 
 
 
