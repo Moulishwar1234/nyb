@@ -229,6 +229,100 @@ console.log(u.reverse());
 
 
 
+//Reference data types:-
+//it is a used to store the reference of the data type
+var person = [
+    {name:"mouli",age:20,addres:"ATP",job:"IT",empid:1},
+    {name:"Rahul",age:29,addres:"Baqng",job:"IT",empid:2},
+    {name:"sai",age:24,addres:"Hyd",job:"IT",empid:3},
+    {name:"vamsi",age:22,addres:"Vis",job:"IT",empid:4},
+    {name:"mallik",age:21,addres:"maj",job:"IT",empid:5},
+    {name:"jay",age:26,addres:"kakn",job:"IT",empid:6},
+    {name:"mnp",age:28,addres:"ATP",job:"IT",empid:7},
+];
+console.log(person);
+person.sort();
+console.log(person);
+person.sort((a,b)=>a.age-b.age)
+console.log(person);
+person.sort((a,b)=>b.age-a.age)
+console.log(person);
+// not only age it well be change the name and age , address , job , empid 
+// localecompare() :-it is a used to compare the string
+// a=z it is a display 
+person.sort((a,b)=>a.name.localeCompare-(b.name))
+console.log(person);
+person.sort((a,b)=>a.name.localeCompare(b.name))
+console.log(person);
+
+//map(),set(),weekmap,weekset
+// map():- it is used to store data in the from of key value pairs
+// in this kay will of any data types and value will of any data types
+var map = new Map();    
+map.set("name","mouli");
+map.set("age",20);
+map.set("addres","ATP");
+map.set("job","IT");
+map.set("empid",1);
+console.log(map);
+console.log(m.size);
+
+// set:-
+// it is used to store data in the form of key value pairs
+// in this key will of any data types and value will of any data types
+var set = new Set();
+set.add("mouli");
+set.add("rahul");
+set.add("sai");
+set.add("vamsi");
+set.add("mallik");
+set.add("jay");
+set.add("mnp");
+console.log(set);
+
+// delete() :- it is used to delete the data from the set
+// has() :- it is used to check the data is present in the set or not
+set.delete("rahul");
+console.log(set);
+// has() :- it is used to check the data is present in the set or not
+set.has("mallik");
+console.log(set);
+// clear:-
+// it is used to delete all the data from the set
+set.clear();
+console.log(set);
+
+// s.set({name:"ravi"},person)
+
+// weekmap:-
+// it is used to store data in the form of key value pairs
+// in this key will of any data types and value will of any data types
+let obj = { id: 1 };
+
+let weakMap = new WeakMap();
+weakMap.set(obj, "mouli");
+
+console.log(weakMap.get(obj)); // Output: "User Data"
+
+// weekset:-
+// it is used to store data in the form of key value pairs
+// in this key will of any data types and value will of any data types
+let user = { name: "mouli" };
+
+let weakSet = new WeakSet();
+weakSet.add(user);
+
+console.log(weakSet.has(user)); // true
+
+
+
+
+
+
+
+
+
+
 
 
 
