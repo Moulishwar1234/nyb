@@ -302,7 +302,7 @@ let obj = { id: 1 };
 let weakMap = new WeakMap();
 weakMap.set(obj, "mouli");
 
-console.log(weakMap.get(obj)); // Output: "User Data"
+console.log(weakMap.get(obj)); 
 
 // weekset:-
 // it is used to store data in the form of key value pairs
