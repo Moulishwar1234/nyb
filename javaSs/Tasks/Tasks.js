@@ -563,6 +563,91 @@ return result;
 console.log(repeatTheString("hi",3));
 console.log(repeatTheString("njysggds",8));
 
+function greet() {
+  console.log(`Hello, ${this.name}`);
+}
+
+const person = { name: 'MOULI' };
+greet.call(person);
+
+const arr = [1, [2, 3], [4, [5, 6, 1]]];
+
+// Step 1: Flatten the array using flat() with a depth of 2 (since there are nested arrays within arrays)
+const flattenedArr = arr.flat(2);
+
+// Step 2: Remove duplicates by using a Set (Sets only store unique values)
+const uniqueArr = [...new Set(flattenedArr)];
+
+// Step 3: Use reduce to calculate the sum of the unique elements
+const sum = uniqueArr.reduce((a, b) => a + b, 0);
+
+console.log(sum); // Output: 21
+
+
+
+// ⦁	Write a recursive function to compute the factorial of a given number.
+function factorial(n) {
+        if (n === 0 || n === 1) {
+    return 1;
+  }
+     return n + factorial(n - 1);
+}
+console.log(factorial(5));
+
+
+function multiply(a) {
+  return function(b) {
+    return function(c) {
+      return a * b * c;
+    };
+  };
+}
+
+console.log(multiply(2)(3)(4));
+
+
+
+// Step 1: Create the person object
+let persons = {
+  name: "John",
+  age: 30,
+  address: "123 Main St"
+};
+
+// Step 2: Add a new property 'email'
+persons.email = "john@example.com";
+
+// Step 3: Delete the 'address' property
+delete person.address;
+
+// Step 4: Update the age
+persons.age = 35;
+
+// Step 5: Iterate through the object and print keys and values
+console.log(persons);
+
+
+function body() {
+  var name = "Mouli";
+  
+  function sayHello() {
+    console.log("Hello, " + name);
+  }
+
+  return sayHello; // Returning the inner function (closure)
+}
+
+var good = body(); // body runs once, returns sayHello function
+good();            // Output: Hello, Mouli
+
+
+
+
+
+
+
+
+
 
 
 
