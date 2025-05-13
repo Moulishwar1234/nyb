@@ -77,6 +77,30 @@ var e = document.querySelectorAll('.head1');
 console.log(e);
 // multiple element based on the selector 
 
+// domtraversing
+// parentnode :- parent of the element
+var f = document.getElementById('head1').parentNode
+console.log(f);
+// children:-
+var g = document.getElementById('head1').children
+console.log(g);
+// firstelements:-
+var h = document.getElementById('head1').firstElementChild
+console.log(h);
+// lastelement:-
+var i = document.getElementById('head1').lastElementChild
+console.log(i);
+
+// sibling:-
+// previous sibling
+// nextsibling
+var j = document.getElementById('head1').previousSibling
+console.log(j);
+// nextsibling
+
+
+
+
 
 
 
