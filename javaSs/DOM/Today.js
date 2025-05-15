@@ -10,6 +10,16 @@ console.dir(document)
 //log print (to see the out put in the console)
 //(dir) to be see the special object properties and methods
 //by usig document we can access the document object
+
+// 5 common DOM selectors in JavaScript.
+// 1. getElementById()
+// 2. getElementsByClassName()
+// 3. getElementsByTagName()
+// 4. querySelector()
+// 5. querySelectorAll()
+// 1. getElementById()
+// it is used to select the element by id
+// it is return the element
 console.dir(document)
 document.childNodes[1].childNodes[2].childNodes[1].innerText="Hi mouli good moring"
 console.dir(document.childNodes[1].childNodes[2].childNodes[1].innerText)
@@ -36,9 +46,9 @@ a.style.color = "red";
 a.style.backgroundColor = "white";
 console.log(a);
 var a = document.getElementById("head6");
-a.style.color = "blue";
-a.style.backgroundColor = "white";
-console.log(a);
+// a.style.color = "blue";
+// a.style.backgroundColor = "white";
+// console.log(a);
 // getelementbyclssname :- multiple element
 var b = document.getElementsByClassName('one')
 b[2].innerText="happy"
@@ -103,21 +113,126 @@ console.log(j);
 
 
 
+// // new Element cretion :-get an element from dom id class tag query query all
+// // 1. Get the parent element (div1)
+// var parentDiv = document.getElementById("div1");
+
+// // 2. Create a new element (e.g., a new <p> tag)
+// var newElement = document.createElement("p");
+// newElement.textContent = "This is a new paragraph inserted at the top of div1";
+
+// // 3. Get the first child element inside div1
+// var firstChild = parentDiv.firstElementChild;
+
+// // 4. Insert the new element before the first existing child
+// parentDiv.insertBefore(newElement, firstChild);
+// // 5. Get the last child element inside div1
+// var lastChild = parentDiv.lastElementChild;
+// // 6. Insert the new element after the last existing child
+// parentDiv.insertBefore(newElement, lastChild.nextSibling);
+// // 7. Get the next sibling of the last child element
+// var nextSibling = lastChild.nextElementSibling;
+
+// replacechild:-it is replaces the existing element
+// Get the parent div
+// var div1 = document.getElementById("div1");
+
+// // Create a new <h1> element
+// var h1 = document.createElement("h1");
+// h1.textContent = " Replaced with a new H1 element";
+// console.log(h1);
+// var container = document.getElementById('head1')
+// container.appendChild('head1')
+
+// Get the existing child to replace (e.g., the current h1 inside div1)
+// var oldH1 = div1.querySelector("h1"); // Or: document.getElementById("head1")
+
+
+// Replace old <h1> with new <h1>
+// div1.replaceChild(h1, oldH1);
+// // replaceChild:-replaces the existing element
+// var first = document.getElementById("we can have a comessence");
+// div1.replaceChild(h1,first)
+
+
+// script.js
+var but = document.getElementById('click');
+
+function butclick() {
+  alert('Button clicked');
+}
+
+but.addEventListener('click', butclick, true);
+
+
+
+// 1. Capturing Phase (Use Capture = true)
+// :-The event flows from the top of the DOM (window) down to the target element.
+
+// Order:
+// window → document → html → body → div → ... → target element
+
+
+
+
+
+// 2. Bubbling Phase (Use Capture = false)
+// The event bubbles from the target element back up to the top of the DOM.
+
+// Order:
+// target element → parent → body → html → document → window
+
+var div = document.getElementById('outer');
+
+div.addEventListener('click', function () {
+  alert('div clicked');
+}, true);
+
+div.addEventListener('click',function (){
+    alert('Div bubbling')
+})
+
+// div capturing > button > div bubbling
+
+// div.addEventListener('mouseenter', function(){
+//     alert('div mouse enter')
+// })
+
+div.addEventListener('mousedown', function(){
+    alert('div mousedown')
+})
+
+
+var table = document.getElementById('table')
+table.addEventListener('click',function(){
+    alert('table clicked')
+})
+
+var heading = document.getElementById("heading");
+var para = document.getElementById("para");
+var textbox = document.getElementById("textbox");
+var btn = document.getElementById("btn");
+var box = document.getElementById("box");
+var list = document.getElementById("list");
+var image = document.getElementById("image");
+var link = document.getElementById("link");
+var table = document.getElementById("table");
+var dropdown = document.getElementById("dropdown");
+var form = document.getElementById("form");
+
+// Example: Add click event to the button
+btn.addEventListener("click", function () {
+  alert("Button Clicked!");
+});
 
 
 
 
 
 
-// 5 common DOM selectors in JavaScript.
-// 1. getElementById()
-// 2. getElementsByClassName()
-// 3. getElementsByTagName()
-// 4. querySelector()
-// 5. querySelectorAll()
-// 1. getElementById()
-// it is used to select the element by id
-// it is return the element
+
+
+
 
 
 
