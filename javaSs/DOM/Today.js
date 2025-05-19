@@ -226,6 +226,29 @@ btn.addEventListener("click", function () {
 });
 
 
+// setTimeout:-executes after a cerataion time 
+// seconf = 1000 milliseconds
+// setTimeout(function,Delay,argument)
+function Delay(){
+  console.log(
+    "setTimeout executed to using the working to the we can pf the mou;ia"
+  );
+  
+}
+setTimeout(Delay, 1000);
+// it will execute nly once after the deyl time 
+
+// setInterval:-it is a multipule time 
+setInterval(Delay,2000)
+
+// clearInterval:-it is will stop the moveing the multiple times code the we sstop only use clearinterval
+let inte = setInterval(Delay,2000)
+setTimeout(()=>{
+  clearInterval(inte)
+
+},4000)
+
+
 
 
 
