@@ -250,6 +250,12 @@ setTimeout(()=>{
 
 
 
+// notmalevent
+// throtteling:-After certer delay
+// debouncing:-after a cerain delay ,reset the function
+
+
+
 
 
 
