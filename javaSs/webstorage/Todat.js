@@ -14,6 +14,7 @@
 
 // to store data used   SetItem ()  
 localStorage.setItem('name','MOULISHWAR GOWD.KALUGURI')
+
 sessionStorage.setItem('name','MOULISHWAR GOWD.KALUGURI')
 sessionStorage.setItem('compay','NYB')
 localStorage.setItem('compay','NYB')
@@ -23,27 +24,36 @@ console.log(sessionStorage.getItem('name'));
 console.log(sessionStorage.getItem('compay'));
 console.log(localStorage.getItem('compay'));
 //  removeItem()
-localStorage.removeItem('name');
-sessionStorage.removeItem('name');
+var r =localStorage.removeItem('name');
+console.log(r);
+
+var y = sessionStorage.removeItem('name');
+console.log(y);
 //  clear()
-localStorage.clear();
-sessionStorage.clear();
+var t = localStorage.clear('compay');
+console.log(t);
+var j = sessionStorage.clear('compay');
+console.log(j);
+
 //  getItem()  ===  null
 //  getItem()  ===  undefined
 //  getItem()  ===  null  ||  getItem()
+
+//  getItem()  ===  null
 var m = localStorage.getItem('MOULISHWAR GOWD.KALUGURI') === null  
 var n = sessionStorage.getItem('MOULISHWAR GOWD.KALUGURI') === null
 console.log(m);
 console.log(n);
 
 
-
+//  getItem()  ===  undefined
 let o = localStorage.getItem('compay') === undefined 
 console.log(o);
 
 let p = sessionStorage.getItem('compay') === undefined
 console.log(p);
 
+//  getItem()  ===  null  ||  getItem()
 var h = localStorage.getItem('name') === null || localStorage.getItem('compay') === undefined 
 console.log(h);
 
